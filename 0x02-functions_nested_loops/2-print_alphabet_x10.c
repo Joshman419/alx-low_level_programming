@@ -2,18 +2,16 @@
 
 /**
  * print_alphabet_10x - print alphabet 10 times
- * Return: On success 1
  */
 void print_alphabet_x10(void)
 {
-	char i, k;
+	int count = 0;
+	char alpha;
 
-	for (k = 0; k < 10; k++)
+	while (count++ <= 9)
 	{
-		for (i = 'a'; i <= 'z';)
-		{
-			_putchar(i);
-		}
+		for (alpha = 'a'; alpha <= 'z'; alpha++)
+			_putchar(alpha);
 		_putchar('\n');
 	}
 }
